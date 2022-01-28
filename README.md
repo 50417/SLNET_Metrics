@@ -27,7 +27,7 @@ $ git clone <gitlink>
 model_metric_cfg.m contains all the configuration options that lets you configure the directory of the zipped projects (which has models to be analyzed) and database (where you store the all the model metric).  
 ##### To automatically find Simulink models and extract metrics from them. 
 ```sh
-> cd MetricCollect
+> cd SLNET_Metrics
 > model_metric_obj = model_metric();
 > model_metric_obj.process_all_models_file();
 ```
@@ -41,7 +41,7 @@ After the metrics are collected from the models, you can view cumulative statist
 ```
 Example 
 ```sh
-> model_metric_obj.total_analyze_metric('GitHub_Metric');
+> model_metric_obj.total_analyze_metric('GitHub_Models');
 ```
 
 ##### Dependencies
