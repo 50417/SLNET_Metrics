@@ -61,7 +61,7 @@ classdef model_metric_cfg < handle
             obj.lvl_info_table_name = strcat(obj.project_source,'_Model_Hierar');
            obj.lvl_info_foreign_table_name = strcat(obj.project_source,'_Projects');
            
-           obj.subsys_info_table_name = strcat(obj.project_source,'_Model_Subsys');
+           obj.subsys_info_table_name = strcat(obj.project_source,'_Subsys');
            obj.subsys_info_foreign_table_name = strcat(obj.project_source,'_Projects');
 
         end
