@@ -377,10 +377,10 @@ classdef model_metric < handle
                             continue
                         end
                    end
-                   if id == 44836 || id == 63223 % models in these project hangs while calculating cyclomatic complexity. Babysit
+                   if (id==44836 | id==63223) % models in these project hangs while calculating cyclomatic complexity. Babysit
                        continue
                    end
-                   if (id==51705 ||  id== 51243) %  % Requires user input: Enter morse code. 51234 chnges directory after analysis.. Need to babysit
+                   if (id==51705 |  id==51243) %  % Requires user input: Enter morse code. 51234 chnges directory after analysis.. Need to babysit
                             continue
                    end
          
