@@ -64,5 +64,5 @@ This tool uses MATLAB/Simulink .
 
 [//]: # (These are reference links used in the body of this note and get stripped out when the markdown processor does its job. There is no need to format nicely because it shouldn't be seen. Thanks SO - http://stackoverflow.com/questions/4823468/store-comments-in-markdown-syntax)
 [paper]:http://ranger.uta.edu/~csallner/papers/Chowdhury18Curated.pdf
-[SLNet-Miner]: https://github.com/Anonymous-double-blind/SLNET_Miner
+[SLNet-Miner]: https://github.com/50417/SLNET_Miner
 [here]: <https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line#creating-a-token>
