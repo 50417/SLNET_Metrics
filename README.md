@@ -37,11 +37,11 @@ After the metrics are collected from the models, you can view cumulative statist
 ```sh
 > 
 > model_metric_obj = model_metric();
-> model_metric_obj.total_analyze_metric(<TABLE NAME>);
+> model_metric_obj.total_analyze_metric(<TABLE NAME>,false);
 ```
 Example 
 ```sh
-> model_metric_obj.total_analyze_metric('GitHub_Models');
+> model_metric_obj.total_analyze_metric('GitHub_Models',false);
 ```
 
 ##### Dependencies
