@@ -524,9 +524,22 @@ classdef model_metric < handle
                                isLib = bdIsLibrary(model_name);% Generally Library are precompiled:  https://www.mathworks.com/help/simulink/ug/creating-block-libraries.html
                                if isLib
                                    obj.WriteLog(sprintf('%s is a library. Skipping calculating cyclomatic metric/compile check',model_name));
+                                   obj.blk_count_old = 0;
+                                   obj.hidden_lines_count_old = 0;
+                                   obj.unique_lines_count_old = 0;
+                                   obj.map = mymap();
+                                   obj.childModelMap = mymap();
+                                   
+                                   obj.obtain_hierarchy_metrics_old(model_name,1,false, false);
+                                   
+                                   
+                                   c_corpus_blk_cnt = obj.blk_count_old;
+                                    c_corpus_hidden_conn = obj.hidden_lines_count_old ;
+                                    c_corpus_conn = obj.unique_lines_count_old ;
+                                    c_corpus_hierar = obj.map.len_keys();
                                    obj.close_the_model(model_name);
                                    try
-                                   obj.write_to_database(id,char(m(end)),file_path,-1,1,schk_blk_count,blk_cnt,c_corpus_blk_cnt,c_corpus_hidden_conn,c_corpus_conn,c_corpus_hierar,c_corpus_cyclo_metric,...
+                                   obj.write_to_database(id,char(m(end)),file_path,-1,1,schk_blk_count,blk_cnt,c_corpus_blk_cnt,c_corpus_hidden_conn,c_corpus_conn,c_corpus_hierar,-1,...
                                        subsys_count,agg_subsys_count,depth,liblink_count,-1,-1 ...
                                    ,-1,-1,-1,'N/A','N/A','N/A'...
                                             ,-1,-1,-1,-1,-1 ...
