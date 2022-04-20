@@ -240,8 +240,9 @@ methods
 
                     if ~ strcmp(currentBlock, model) 
                         
-                        blockType = get_param(currentBlock, 'blocktype');
-                        obj.blockTypeMap.inc(blockType{1,1});
+                        blockType = get_block_type(currentBlock);
+                        obj.WriteLog(sprintf("Block: [%s] BlockType: [%s]",currentBlock{1},blockType));
+                        obj.blockTypeMap.inc(blockType);
                         
                         %TODO
                         %libname = obj.get_lib(blockType{1, 1});
