@@ -5,6 +5,9 @@ This tool is an extension of metric collect tool described in this [paper]. We a
  
 It analyzes the models of the projects in a zip file. It works with projects collected from [SLNet-Miner]
 
+## Recent News
+Our paper [SLNET] has been accepted at IEEE International Working Conference on Mining Software Repositories (MSR 2022, CORE: A)
+
 ### Requirements
 
 * Windows/Linux (tested on Ubuntu 18.04 and Windows 10)
@@ -66,3 +69,4 @@ This tool uses MATLAB/Simulink .
 [paper]:http://ranger.uta.edu/~csallner/papers/Chowdhury18Curated.pdf
 [SLNet-Miner]: https://github.com/50417/SLNET_Miner
 [here]: <https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line#creating-a-token>
+[SLNET]: <https://ranger.uta.edu/~csallner/papers/Shrestha22SLNET.pdf>
